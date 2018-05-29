@@ -1,0 +1,129 @@
+body {
+    background-color:#DCDCDC;
+    font-family: 'Lora', serif;
+}
+.navbar {
+    display: flex;
+    background-color: white;
+    padding: 0%;
+    border-bottom: 2px solid #c6c4c4;
+}
+.navbar > .navbar-brand {
+    display: flex;
+    justify-content: center;
+    background-color: #20B2AA;
+    color: white;
+    padding: 3%;
+    margin-left: 3%;
+}
+.navbar .nav li.nav-item {
+    display: flex;
+    align-items: center;  
+}
+.nav >.nav-item > .nav-link {
+    color: #808080;
+}
+.mobileBrand {
+    background-color: #20B2AA;
+    text-align: center;
+    color: white;
+    font-size: 35px;
+    display: none;
+}
+.card-title{
+    text-align: left;
+    color: #20B2AA;
+    padding-top: 5%;
+    padding-left: 5%;
+}
+.underline{
+    border-bottom: 1px solid #808080;
+    margin-left: 5%;
+    width: 90%;
+    margin-bottom: 5%;
+    }
+
+
+.container {
+    background-color: white;
+    margin-top: 3%;
+    margin-left: 3%;
+    padding: 20px;
+    margin-right: 3%;
+    
+}
+.div.row {
+    width: 50%;
+}
+.div.col-md-5 {
+    margin: 5%;
+}
+
+
+.wrapper{  
+    float:left; /* important */  
+    position:relative; /* important(so we can absolutely position the description div */  
+}  
+.description{  
+    position:absolute; /* absolute position (so we can position it where we want)*/  
+    bottom:0px; /* position will be on bottom */  
+    left:0px;  
+    width:100%;  
+    /* styling bellow */  
+    background-color:black;  
+    font-family: 'tahoma';  
+    font-size:15px;  
+    color:white;  
+    opacity:0.6; /* transparency */  
+    filter:alpha(opacity=60); /* IE transparency */  
+}  
+p.description_content{  
+    padding:10px;  
+    margin:0px;  
+}  
+
+
+
+#footer{
+    display: flex;
+    justify-content: center;
+    bottom: 0;
+    width: 100%;
+    position: fixed;
+    height: 50px;
+    background-color: #808080;
+    margin: 0;
+    border-top: #20B2AA 5px solid;
+}
+.footer-text {
+    margin-top: 10px;
+}
+
+@media only screen and (max-width: 980px) {
+    .container {
+        width: 70%;
+    }
+
+}
+
+@media only screen and (max-width: 786px) {
+    .container {
+        width: 90%;
+    }
+}
+@media only screen and (max-width: 640px) {
+    .navbar > .navbar-brand {
+        display: none;
+    }
+    
+    .container {
+        width: 90%;
+    }
+    .navbar .nav  {
+       padding-left: 7%;
+        }
+   .mobileBrand{
+       display: flex;
+       justify-content: center;
+   }
+}

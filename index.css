@@ -1,0 +1,120 @@
+body {
+    background-color:#DCDCDC;
+    font-family: 'Lora', serif;
+}
+.navbar {
+    display: flex;
+    background-color: white;
+    padding: 0%;
+    border-bottom: 2px solid #c6c4c4;
+}
+.navbar > .navbar-brand {
+    display: flex;
+    justify-content: center;
+    background-color: #20B2AA;
+    color: white;
+    padding: 3%;
+    margin-left: 3%;
+}
+.navbar .nav li.nav-item {
+    display: flex;
+    align-items: center;  
+}
+.nav >.nav-item > .nav-link {
+    color: #808080;
+}
+.mobileBrand {
+    background-color: #20B2AA;
+    text-align: center;
+    color: white;
+    font-size: 35px;
+    display: none;
+}
+.card {
+    margin: 5%;
+    overflow: scroll;
+}
+.card-title{
+    text-align: left;
+    color: #20B2AA;
+    padding-top: 5%;
+    padding-left: 5%;
+}
+.underline{
+    border-bottom: 1px solid #808080;
+    margin-left: 5%;
+    width: 90%;
+    margin-bottom: 5%;
+    }
+.card-img-top{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 95%;
+}
+
+.card {
+    padding: 5%;
+}
+#desktopWrappedCard{
+    margin-top: 10%;
+    width: 70%;
+    height: 500px;
+    background-color: white;
+    border: 2px solid #c6c4c4;
+    padding: 5%;
+}
+#desktopWrappedCard .p{
+    clear: both;
+}
+
+#wrappedImage{
+    height: 60%;
+    width: 50%;
+    float: left; 
+    margin: 4px 10px 0px 0px; 
+}
+#footer{
+    display: flex;
+    justify-content: center;
+    bottom: 0;
+    width: 100%;
+    position: fixed;
+    height: 50px;
+    background-color: #808080;
+    margin: 0;
+    border-top: #20B2AA 5px solid;
+}
+.footer-text {
+    margin-top: 10px;
+}
+
+@media only screen and (max-width: 980px) {
+    #cardAboutMe{
+        display: none;
+       }
+}
+
+@media only screen and (max-width: 786px) {
+   #cardAboutMe{
+    display: none;
+   }
+}
+@media only screen and (max-width: 640px) {
+    .navbar > .navbar-brand {
+        display: none;
+    }
+    #desktopWrappedCard {
+        display: none;
+    }
+    .navbar {
+        /* display: flex; */
+        /* justify-content: center; */
+    }
+    .navbar .nav  {
+       padding-left: 7%;
+        }
+   .mobileBrand{
+       display: flex;
+       justify-content: center;
+   }
+}
